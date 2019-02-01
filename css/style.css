@@ -1,0 +1,134 @@
+body{
+	font-family: ariel, sans-serif;
+	font-size: 13pt;
+	margin-top:0px;
+	margin:0px;
+	background-color: #9AE4D5;
+}
+#topbar{
+	color: white;
+	width:100%;
+	height:90px;
+	background-color: #3C5064;
+}
+#container{
+	display: flex;
+	flex-direction: column;
+	width:70%;
+	margin:auto;
+}
+header{
+	height:100%;
+	width:70%;
+	margin: auto;	
+
+}
+header > a > h1{
+	width:250px;
+	height:90px;
+	font-size: 28pt;
+	line-height: 90px;
+	margin-top:0px;
+    font-family: 'Lobster', cursive;
+    color:white;
+    text-decoration: none;
+    -webkit-transition: color 0.5s, transform 0.5s; /* Safari */
+    transition: color 0.2s, transform 0.5s;
+    padding-left: 10px;
+}
+header > a{
+	text-decoration: none;
+}
+header > a > h1:hover{
+	color: orange;
+    -ms-transform: rotate(-3deg); /* IE 9 */
+    -webkit-transform: rotate(-3deg); /* Safari 3-8 */
+    transform: rotate(-3deg);
+}
+nav{
+	padding-right: 40px;
+	float:right;
+	text-align: right;
+	width:400px;
+	height:100%;
+}
+nav > a{
+	line-height: 90px; /*same as blue bar*/
+	text-decoration: none;
+	color: white;
+	font-size: 12pt;
+	margin-left:40px;
+	/*fade color*/
+	-webkit-transition: color 0.2s; /* Safari */
+    transition: color 0.2s;
+}
+nav > a:hover{
+	color: orange;
+}
+footer{
+	width:60%;
+	min-height: 50px;
+	padding:20px;
+	background-color:  #344e4a;
+	color:white;
+	font-size: 12px;
+	text-align: center;
+	margin:auto;
+	margin-top:30px;
+}
+
+
+
+
+@media (max-width: 1270px){
+	#container{
+		width:90%;
+	}
+	header{
+		width: 90%;
+	}
+}
+@media (max-width: 1024px){
+	#container{
+		width:98%;
+		min-width: 300px;
+	}
+	header{
+		width: 98%;
+		min-width: 300px;
+	}
+}
+@media only screen and (orientation: portrait){
+	header > a > h1{
+		line-height: initial;
+		padding:0px;
+		width: auto;
+		display: block;
+		font-size: 40pt;
+		position: relative;
+		bottom:120px;
+		text-align: center;
+	}
+	nav{
+		width:100%;
+		height:100%;
+		padding:0px;
+		float:initial;
+		position: relative;
+		top:90px;
+		text-align: center;
+	}
+	nav > a{
+		z-index: 99999;
+		line-height: 25px; /*same as blue bar*/
+		text-decoration: none;
+		text-align: center;
+		float:initial;
+		margin-left: 0px;
+		margin:10px;
+	}
+	#topbar{
+		height:130px;
+	}
+}
+
