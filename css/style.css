@@ -98,8 +98,6 @@ footer{
 		width: 98%;
 		min-width: 300px;
 	}
-}
-@media only screen and (orientation: portrait){
 	header > a > h1{
 		line-height: initial;
 		padding:0px;
